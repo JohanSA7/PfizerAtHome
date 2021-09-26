@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/stylesVacuna.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <title>Registro de Vacuna</title>
+</head>
+
+<body>
+    <h1 class="tittle">REGISTRO VACUNA PFIZER K </h1>
+    <div class="Container ">
+        <div class="row">
+            <div class="col">
+                <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+                    <form action="" class="row g-3 needs-validation" novalidate>
+
+
+                        <div class="col-md-2 position-relative">
+
+                            <label for="idVacuna" class="form-label">Id Vacuna</label>
+                            <input id="idVacuna" name="idVacuna" type="text" class="form-control" required>
+                            <div class="valid-tooltip">OK</div>
+                            <div class="invalid-tooltip">Complete el dato</div>
+                        </div>
+
+                        <div class="col-md-2 position-relative">
+
+                            <label for="modeloVacuna" class="form-label">Modelo Vacuna</label>
+                            <input id="modeloVacuna" name="modeloVacuna" type="text" class="form-control" required>
+                            <div class="valid-tooltip">OK</div>
+                            <div class="invalid-tooltip">Complete el dato</div>
+
+                        </div>
+
+                        <div class="col-md-2 position-relative">
+
+                            <label for="lote" class="form-label">Lote</label>
+                            <input id="lote" name="lote" type="text" class="form-control" required>
+                            <div class="valid-tooltip">OK</div>
+                            <div class="invalid-tooltip">Complete el dato</div>
+
+                        </div>
+
+                        <div class="col-md-2 position-relative">
+
+                            <label for="Fecha" class="form-label">Fecha Vencimiento</label>
+                            <input id="fecha" name="fecha" type="date" class="form-control" required>
+                            <div class="valid-tooltip">OK</div>
+                            <div class="invalid-tooltip">Complete el dato</div>
+
+                        </div>
+
+                        <div class="col-md-2 position-relative">
+
+                            <label for="hora" class="form-label">Dosis</label>
+                            <input id="hora" name="hora" type="number" class="form-control" required>
+                            <div class="valid-tooltip">OK</div>
+                            <div class="invalid-tooltip">Complete el dato</div>
+
+                        </div>
+
+                        
+
+
+                        <button type="submit" class="btn btn-danger fw-bold">Almacenar Vacuna</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+                            else{
+                                alert("Vacuna almacenada con éxito.")
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+        </script>
+
+
+</body>
+
+</html>

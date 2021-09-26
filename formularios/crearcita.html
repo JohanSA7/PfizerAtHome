@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="/css/stylesVacuna.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+  <title>Registro de Cita</title>
+</head>
+
+<body>
+  <h1 class="tittle">REGISTRO DE CITA PFIZER KIDS </h1>
+  <div class="Container ">
+    <div class="row">
+      <div class="col">
+        <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+          <form action="" class="row g-3 needs-validation" novalidate>
+
+
+            <div class="col-md-2 position-relative">
+
+              <label for="idPaciente" class="form-label">Id Paciente</label>
+              <input id="idPaciente" name="identificacion" type="text" class="form-control" required>
+              <div class="valid-tooltip">OK</div>
+              <div class="invalid-tooltip">Complete el dato</div>
+            </div>
+
+            <div class="col-md-4">
+
+              <label for="nombpaciente" class="form-label">Nombre Paciente</label>
+              <input id="nombpaciente" name="nombpaciente" type="text" class="form-control" readonly>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <label for="Apellpaciente" class="form-label">Apellido Paciente</label>
+              <input id="Apellpaciente" name="Apellpaciente" type="text" class="form-control" readonly>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <label for="nombacudiente" class="form-label">Nombre Acudiente</label>
+              <input id="nombacudiente" name="nombacudiente" type="text" class="form-control" readonly>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <label for="ApellAcudiente" class="form-label">Apellido Acudiente</label>
+              <input id="ApellAcudiente" name="ApellAcudiente" type="text" class="form-control" readonly>
+
+            </div>
+
+            <div class="col-md-2 position-relative">
+
+              <label for="Fecha" class="form-label">Fecha</label>
+              <input id="fecha" name="fecha" type="date" class="form-control" required>
+              <div class="valid-tooltip">OK</div>
+              <div class="invalid-tooltip">Complete el dato</div>
+
+            </div>
+
+            <div class="col-md-2 position-relative">
+
+              <label for="hora" class="form-label">Hora</label>
+              <input id="hora" name="hora" type="time" class="form-control" required>
+              <div class="valid-tooltip">OK</div>
+              <div class="invalid-tooltip">Complete el dato</div>
+
+            </div>
+
+            <div class="col-md-2 position-relative">
+
+              <label for="direccion" class="form-label">Direccion Casa</label>
+              <input id="direccion" name="fecha" type="text" class="form-control" required>
+              <div class="valid-tooltip">OK</div>
+              <div class="invalid-tooltip">Complete el dato</div>
+
+            </div>
+
+            <div class="col-md-2 position-relative">
+
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input id="telefono" name="telefono" type="text" class="form-control" required>
+              <div class="valid-tooltip">OK</div>
+              <div class="invalid-tooltip">Complete el dato</div>
+
+            </div>
+
+
+            <button id="conPaciente" type="button" class="btn btn-dark">Consultar Paciente</button>
+            <button type="submit" class="btn btn-info fw-bold">Guardar Cita</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              } else {
+                alert("Cita Agendada con éxito.")
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
+
+
+</body>
+
+</html>
