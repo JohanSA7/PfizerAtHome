@@ -94,9 +94,35 @@
               <div class="invalid-tooltip">Complete el dato</div>
 
             </div>
+            <div class="col-md-2 position-relative">
 
+              <label for="idAuxiliar" class="form-label">Id Auxiliar</label>
+              <input id="idAuxiliar" name="identificacion" type="text" class="form-control" required>
+              <div class="valid-tooltip">OK</div>
+              <div class="invalid-tooltip">Complete el dato</div>
+            </div>
 
+            <div class="col-md-4">
+
+              <label for="nombauxiliar" class="form-label">Nombre Auxiliar</label>
+              <input id="nombauxiliar" name="nombauxiliar" type="text" class="form-control" readonly>
+
+            </div>
+            <div class="col-md-4">
+
+              <label for="apellidoauxiliar" class="form-label">Apellido Auxiliar</label>
+              <input id="apellidoauxiliar" name="apellidoauxiliar" type="text" class="form-control" readonly>
+
+            </div>
+            <div class="col-md-4">
+
+              <label for="telauxiliar" class="form-label">Telefono Auxiliar</label>
+              <input id="telbauxiliar" name="telauxiliar" type="text" class="form-control" readonly>
+
+            </div>
+            
             <button id="conPaciente" type="button" class="btn btn-dark">Consultar Paciente</button>
+            <button id="conAuxiliar" type="button" class="btn btn-dark">Consultar Auxiliar</button>
             <button type="submit" class="btn btn-info fw-bold">Guardar Cita</button>
 
           </form>
