@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/estiloEnfermeroJefe.css">
+
+        <title>REGISTRO ENFERMERO JEFE</title>
+    </head>
+    <body>
+        <h3>REGISTRO ENFERMERO JEFE</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-3 position-relative">
+                                <label for="nombre" class="form-label">Nombres</label>
+                                <input id="nombre" name="nombre" type="text" class="form-control" required>
+                                <!--"valid-feedback"-->
+                                <div class="valid-tooltip">Campo ok</div>
+                                <div class="invalid-tooltip">Complete los datos</div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <label for="nombre" class="form-label">Apellidos</label>
+                                <input id="Apellido" name="Apellido" type="text" class="form-control" required>
+                                <div class="valid-tooltip">Campo ok</div>
+                                <div class="invalid-tooltip">Complete los datos</div>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                               <label for="Edad" class="form-label">Edad</label>
+                               <input id="Edad" name="Edad" type="number" class="form-control" required>
+                               <div class="valid-tooltip">Campo ok</div>
+                               <div class="invalid-tooltip">Complete los datos</div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                              <label for="Identificacion" class="form-label">Identificacion</label>
+                              <input id="Identificacion" name="Identificacion" type="number" class="form-control" required>
+                              <div class="valid-tooltip">Campo ok</div>
+                              <div class="invalid-tooltip">Complete los datos</div>
+                            </div>  
+                            <div class="col-md-4 position-relative">
+                                <label for="telefono" class="form-label">Telefono del </label>
+                                <input id="Telefono" name="Telefono" type="number" class="form-control" required>
+                                <div class="valid-tooltip">Campo ok</div>
+                                <div class="invalid-tooltip">Complete los datos</div>
+                            </div>   
+                            <div class="col-md-4 position-relative">
+                                <label for="Dirección" class="form-label">Dirección </label>
+                                <input id="Dirección" name="Dirección" type="text, number" class="form-control" required>
+                                <div class="valid-tooltip">Campo ok</div>
+                                <div class="invalid-tooltip">Complete los datos</div>
+                            </div>   
+                            <div class="col-md-3 position-relative">
+                                  <label for="Area Laboratorio">Area Laboratorio</label>
+                                  <select name="Area Laboratorio" id="Area Laboratorio" class="form-select" required>
+                                      <option selected disabled value="">Seleccione el area...</option>
+                                      <option value="">Area laboratorio 01</option>
+                                      <option value="">Area laboratorio 02</option>
+                                      <option value="">Area laboratorio 03</option>
+                                      <option value="">Area laboratorio 04</option>
+                                      <option value="">Area laboratorio 05</option>
+                                  </select>
+                                </div>
+                                <div class="valid-tooltip">Campo ok</div>
+                                <div class="invalid-tooltip">Complete los datos</div>
+                            </div>
+                        <div>
+                            <button type="submit" class="btn btn-warning fw-bold">Enviar</button>
+                        </div>
+                    </div>
+                        <form>
+                            <a href="regEnfermeroAux.html">Registro enfermero auxiliar</a>
+                        </form>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <!--Ingresamos el código de validación...-->
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                        }else{
+                            alert("DATOS VALIDADOS.")
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                    })
+                })()
+                
+            </script>
+    </body>
+</html>
