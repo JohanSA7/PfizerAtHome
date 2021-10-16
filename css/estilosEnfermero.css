@@ -5,7 +5,7 @@ body {
     flex-direction: column;
   }
   
-  
+
   body {
     height: 100vh;
     background: whitesmoke;
@@ -13,8 +13,8 @@ body {
     overflow: hidden;
   }
   .container {
-    width: 800px;
-    height: 400px;
+    width: 900px;
+    height: 450px;
     background:gray;
     position: relative;
     display: grid;
@@ -23,7 +23,7 @@ body {
   }
   
   .button {
-    position: absolute;
+    position: unset;
     background:orange;
     width: 50%;
     height: 100%;
